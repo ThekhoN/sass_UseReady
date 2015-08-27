@@ -1,0 +1,315 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v1.2.1
+* Docs at http://davidtheclark.github.io/scut
+*/
+/* Start with mobile first definitions */
+/* line 31, ../sass/partials/_vars.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/partials/_utilities.scss */
+.alignX {
+  text-align: center;
+}
+
+/* line 5, ../sass/partials/_utilities.scss */
+.captionX99, .headerBannerX, .navContX, .navContX ul li a, .subNavContX, .subNavContX ul li a {
+  width: 100%;
+  float: left;
+}
+/* line 15, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/addons/_clearfix.scss */
+.captionX99:after, .headerBannerX:after, .navContX:after, .navContX ul li a:after, .subNavContX:after, .subNavContX ul li a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 11, ../sass/partials/_utilities.scss */
+.headerBannerX img {
+  max-width: 100%;
+  height: auto;
+  display: inline;
+}
+
+/* line 18, ../sass/partials/_utilities.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 25, ../sass/partials/_utilities.scss */
+.boldenX {
+  font-weight: 900;
+}
+
+/* line 29, ../sass/partials/_utilities.scss */
+.wrapCenterCont {
+  text-align: center;
+  height: 100%;
+}
+/* line 32, ../sass/partials/_utilities.scss */
+.wrapCenterCont:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 40, ../sass/partials/_utilities.scss */
+.centeredContX {
+  display: inline-block;
+  vertical-align: middle;
+  width: 96%;
+}
+
+/* line 47, ../sass/partials/_utilities.scss */
+.captionX99 {
+  padding: 1em 0;
+  margin-top: 1.6em;
+  text-align: center;
+}
+/* line 52, ../sass/partials/_utilities.scss */
+.captionX99 h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #cccccc;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  /* line 52, ../sass/partials/_utilities.scss */
+  .captionX99 h2 {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+  }
+  /* line 1451, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/scut-1.2.1/dist/_scut.scss */
+  .captionX99 h2:before, .captionX99 h2:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+  /* line 1480, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/scut-1.2.1/dist/_scut.scss */
+  .captionX99 h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  /* line 1484, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/scut-1.2.1/dist/_scut.scss */
+  .captionX99 h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
+
+/* line 1, ../sass/partials/_navHeader.scss */
+.headerBannerX {
+  height: 16em;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 8, ../sass/partials/_navHeader.scss */
+.headerBannerX img {
+  float: left;
+}
+
+/* line 16, ../sass/partials/_navHeader.scss */
+.navContX ul {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 20, ../sass/partials/_navHeader.scss */
+.navContX ul li {
+  float: left;
+  display: block;
+  width: 20%;
+  color: red;
+  padding: 0.6em 0;
+}
+/* line 26, ../sass/partials/_navHeader.scss */
+.navContX ul li a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875em;
+  padding: 0.2em 0.6em;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* line 43, ../sass/partials/_navHeader.scss */
+.subNavContX ul {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+/* line 47, ../sass/partials/_navHeader.scss */
+.subNavContX ul li {
+  float: left;
+  display: block;
+  width: 33.33%;
+  color: red;
+  padding: 0.6em 0;
+}
+/* line 53, ../sass/partials/_navHeader.scss */
+.subNavContX ul li a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+  padding: 0.2em 0.6em;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* line 26, ../sass/screen.scss */
+#mainWrapperX_PromotionName {
+  max-width: 1664px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-linear-gradient( left , rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 91.24088%, transparent 91.24088%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 91.24088%, transparent 91.24088%);
+  background-size: 8.39461%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  font-size: 1em;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  color: #212121;
+}
+/* line 12, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#mainWrapperX_PromotionName:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 26, ../sass/screen.scss */
+  #mainWrapperX_PromotionName {
+    font-size: 16px;
+  }
+}
+/* line 39, ../sass/screen.scss */
+#mainWrapperX_PromotionName h2 {
+  font-size: 2.65em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
+}
+/* line 46, ../sass/screen.scss */
+#mainWrapperX_PromotionName h3 {
+  font-size: 1.625em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
+}
+/* line 56, ../sass/screen.scss */
+#mainWrapperX_PromotionName ul {
+  list-style: none;
+}
+/* line 59, ../sass/screen.scss */
+#mainWrapperX_PromotionName p {
+  max-width: 400px;
+}
+/* line 63, ../sass/screen.scss */
+#mainWrapperX_PromotionName a img {
+  border: none;
+}
+/* line 66, ../sass/screen.scss */
+#mainWrapperX_PromotionName a {
+  outline: 0;
+  text-decoration: none;
+}
+/* line 70, ../sass/screen.scss */
+#mainWrapperX_PromotionName img.map,
+#mainWrapperX_PromotionName map area {
+  outline: none;
+}
+
+/* line 76, ../sass/screen.scss */
+.shop99X {
+  text-transform: uppercase;
+  font-size: 0.975em;
+  letter-spacing: 1px;
+  display: inline-block;
+  background: #ffffff;
+  color: #212121;
+  padding: 0.5em 0.9em;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.35);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 95, ../sass/screen.scss */
+.navFixedSmall {
+  position: static !important;
+  /*this resets FIXED widget to static position*/
+}
+
+/* line 100, ../sass/screen.scss */
+.gutterPromotionHiddenOnOtherPages {
+  display: none !important;
+}
+
+/* line 104, ../sass/screen.scss */
+.bottomFreezeDiv,
+#breadCrumbWrapper,
+#rightLangWrapper {
+  display: none !important;
+  z-index: -1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* line 113, ../sass/screen.scss */
+.header-fixed,
+.hd-rvmp.header-fixed,
+#headerTop,
+#headerFixed {
+  position: static !important;
+}
+
+/* line 120, ../sass/screen.scss */
+#content_wrapper {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+/*weird fixed nav bar*/
+/* line 126, ../sass/screen.scss */
+.fixed-header-slide {
+  min-height: 0px !important;
+}
+
+/* line 130, ../sass/screen.scss */
+#dock.dock {
+  position: static !important;
+  top: -100px;
+  display: none;
+}
+
+/* ////////////////// ENDERINO RESETERINO ///////////////////// */
